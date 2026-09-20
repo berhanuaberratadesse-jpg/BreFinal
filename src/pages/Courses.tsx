@@ -156,6 +156,31 @@ export function Courses() {
           </div>
         </div>
 
+        <section className="mb-8 overflow-hidden rounded-[2rem] border border-amber-400/40 bg-gradient-to-br from-amber-500/15 via-slate-800 to-slate-900 shadow-[0_20px_70px_-25px_rgba(245,158,11,0.55)]">
+          <div className="grid gap-0 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="p-6 sm:p-8">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-amber-300">Complete 12-Lesson Course</p>
+              <h2 className="text-3xl font-bold text-white sm:text-4xl">From Self to Christ</h2>
+              <p className="mt-2 text-lg font-medium text-amber-200">A 12-Lesson Journey of Transformation</p>
+              <p className="mt-4 max-w-2xl leading-7 text-slate-300">
+                Discover your identity in Christ, renew your mind through biblical truth, and grow in a life that reflects Jesus Christ. The complete course includes all 12 lessons, reflection questions, prayer, key takeaways, and practical life-application exercises.
+              </p>
+            </div>
+
+            <div className="flex flex-col justify-center border-t border-white/10 bg-slate-950/55 p-6 sm:p-8 lg:border-l lg:border-t-0">
+              <p className="text-sm uppercase tracking-[0.18em] text-slate-400">One-time payment</p>
+              <p className="mt-1 text-4xl font-bold text-amber-400">$39.99</p>
+              <a
+                href="https://berhanutadesse.com?msopen=/member/plans/laxglhiqpa"
+                className="mt-6 inline-flex items-center justify-center rounded-full bg-amber-500 px-6 py-3 font-bold text-slate-950 shadow-lg shadow-amber-500/20 transition hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-slate-900"
+              >
+                Purchase Full Course
+              </a>
+              <p className="mt-3 text-center text-xs text-slate-400">Secure checkout and course access through MemberSpace</p>
+            </div>
+          </div>
+        </section>
+
         {signedUp ? (
           <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/10 p-6 text-emerald-200">
             <h2 className="text-2xl font-bold mb-2">Thank you for signing up!</h2>
