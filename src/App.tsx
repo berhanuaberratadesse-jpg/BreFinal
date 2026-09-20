@@ -11,6 +11,7 @@ import { Audiobook } from './pages/Audiobook';
 import { Courses } from './pages/Courses';
 import { Blog } from './pages/Blog';
 import { AdminBlog } from './pages/AdminBlog';
+import { CourseReader } from './pages/CourseReader';
 
 const testimonials = [
   {
@@ -77,7 +78,7 @@ function App() {
   const [cartOpen, setCartOpen] = useState(false);
   const [productSelectorOpen, setProductSelectorOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState<'home' | 'payment' | 'audiobook' | 'courses' | 'blog' | 'admin'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'payment' | 'audiobook' | 'courses' | 'course-reader' | 'blog' | 'admin'>('home');
   const totalItems = cartStore.getTotalItems();
 
   const handleNavigation = (page: 'home' | 'audiobook' | 'courses' | 'blog', sectionId?: string) => {
@@ -110,6 +111,8 @@ function App() {
       setCurrentPage('audiobook');
     } else if (path === '/courses') {
       setCurrentPage('courses');
+    } else if (path === '/courses/from-self-to-christ') {
+      setCurrentPage('course-reader');
     } else if (path === '/blog') {
       setCurrentPage('blog');
     } else if (path === '/admin') {       // <--- ADD THIS LINE
@@ -221,6 +224,7 @@ function App() {
       <main id="main" className="pt-16">
         {currentPage === 'audiobook' && <Audiobook />}
         {currentPage === 'courses' && <Courses />}
+        {currentPage === 'course-reader' && <CourseReader />}
         {currentPage === 'blog' && <Blog />}
         {currentPage === 'admin' && <AdminBlog />}
 
