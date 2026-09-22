@@ -6,7 +6,6 @@ export function AwardsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const awards = [
-    { id: 1, image: '/awards/777F7910-CB04-41ED-94B0-0E9BC2DBAACD.jpg', title: 'Award Recognition', description: 'Featured honor from the current collection' },
     { id: 2, image: '/awards/A97757E5-5B21-4FFE-AEEC-C88812FE8A3A.jpg', title: 'Award Recognition', description: 'Featured honor from the current collection' },
     { id: 3, image: '/awards/D395EDA2-F7AD-4A7A-8710-8691BA288362.jpg', title: 'Award Recognition', description: 'Featured honor from the current collection' },
     { id: 4, image: '/awards/E02462F7-8948-42A4-A02B-5B136580ADCA.jpg', title: 'International Impact Book Award', description: 'Recognized for outstanding literary achievement' },
@@ -136,7 +135,7 @@ export function AwardsSection() {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-16 border-t border-amber-400/20">
           <div className="text-center">
-            <div className="text-4xl font-bold text-amber-400 mb-2">6</div>
+            <div className="text-4xl font-bold text-amber-400 mb-2">2</div>
               <p className="text-gray-400">International Awards</p>
           </div>
           <div className="text-center">
