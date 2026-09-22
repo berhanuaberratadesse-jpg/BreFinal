@@ -17,7 +17,7 @@ export function YouTubeSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 items-start">
+        <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="space-y-4">
             <div className="rounded-xl overflow-hidden shadow-2xl border border-amber-500/20 aspect-video bg-slate-900">
               <iframe
@@ -54,6 +54,21 @@ export function YouTubeSection() {
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/FoOJWN500ao"
+                title="Berhanu Tadesse Video"
+                loading="lazy"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <h3 className="text-xl font-semibold text-white">Berhanu Tadesse Video</h3>
+          </div>
+          <div className="space-y-4">
+            <div className="rounded-xl overflow-hidden shadow-2xl border border-amber-500/20 aspect-video bg-slate-900">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/rLMhC-jS8UM"
                 title="Berhanu Tadesse Video"
                 loading="lazy"
                 frameBorder="0"
