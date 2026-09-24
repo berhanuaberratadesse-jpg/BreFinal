@@ -159,11 +159,11 @@ export function Courses() {
         <section className="mb-8 overflow-hidden rounded-[2rem] border border-amber-400/40 bg-gradient-to-br from-amber-500/15 via-slate-800 to-slate-900 shadow-[0_20px_70px_-25px_rgba(245,158,11,0.55)]">
           <div className="grid gap-0 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="p-6 sm:p-8">
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-amber-300">Complete 12-Lesson Course</p>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-amber-300">Complete 14-Lesson Course</p>
               <h2 className="text-3xl font-bold text-white sm:text-4xl">From Self to Christ</h2>
-              <p className="mt-2 text-lg font-medium text-amber-200">A 12-Lesson Journey of Transformation</p>
+              <p className="mt-2 text-lg font-medium text-amber-200">A 14-Lesson Journey of Transformation</p>
               <p className="mt-4 max-w-2xl leading-7 text-slate-300">
-                Discover your identity in Christ, renew your mind through biblical truth, and grow in a life that reflects Jesus Christ. The complete course includes all 12 lessons, reflection questions, prayer, key takeaways, and practical life-application exercises.
+                Discover your identity in Christ, renew your mind through biblical truth, and grow in a life that reflects Jesus Christ. The complete course includes all 14 lessons, reflection questions, prayer, key takeaways, and practical life-application exercises.
               </p>
             </div>
 
