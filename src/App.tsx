@@ -113,7 +113,7 @@ function App() {
       setCurrentPage('courses');
     } else if (path === '/courses/from-self-to-christ') {
       setCurrentPage('course-reader');
-    } else if (path === '/blog') {
+    } else if (path === '/blog' || path === '/blog/english' || path === '/blog/amharic') {
       setCurrentPage('blog');
     } else if (path === '/admin') {       // <--- ADD THIS LINE
       setCurrentPage('admin');            // <--- ADD THIS LINE
