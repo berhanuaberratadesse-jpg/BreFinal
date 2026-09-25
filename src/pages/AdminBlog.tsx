@@ -11,6 +11,7 @@ export function AdminBlog() {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [category, setCategory] = useState('blog');
+  const [blogLanguage, setBlogLanguage] = useState<'english' | 'amharic'>('english');
   const [linkUrl, setLinkUrl] = useState('');
   const [password, setPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -122,7 +123,7 @@ export function AdminBlog() {
         { 
           title, 
           content: category === 'blog' ? content : '',
-          category,
+          category: category === 'blog' && blogLanguage === 'amharic' ? 'blog_amharic' : category,
           link_url: linkUrl || null
         }
       ]);
@@ -192,6 +193,7 @@ export function AdminBlog() {
               <div className={`p-4 mb-6 rounded-lg ${message.includes('success') ? 'bg-green-900/50 border border-green-700 text-green-300' : 'bg-red-900/50 border border-red-700 text-red-300'}`}>
                 {message}
               </div>
+
             )}
             <form onSubmit={handleChangePassword} className="space-y-6">
               <div>
@@ -237,6 +239,17 @@ export function AdminBlog() {
                   <option value="course">🎓 Course Link</option>
                 </select>
               </div>
+
+              {category === 'blog' && (
+                <div>
+                  <label className="block text-sm font-medium text-gray-300 mb-2" htmlFor="blog-language">Blog Language</label>
+                  <select id="blog-language" value={blogLanguage} onChange={(e) => setBlogLanguage(e.target.value as 'english' | 'amharic')}
+                    className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-400">
+                    <option value="english">English</option>
+                    <option value="amharic">አማርኛ (Amharic)</option>
+                  </select>
+                </div>
+              )}
 
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">Title</label>
@@ -300,7 +313,7 @@ export function AdminBlog() {
                 <div key={post.id} className="bg-slate-900 p-4 rounded-lg flex items-center justify-between border border-slate-700 hover:border-amber-500/30 transition-colors">
                   <div className="truncate mr-4 flex-1">
                     <span className={`text-[10px] font-black uppercase tracking-wider mb-1 px-2 py-1 rounded inline-block ${post.category === 'blog' ? 'bg-blue-900/30 text-blue-400' : post.category === 'audiobook' ? 'bg-amber-900/30 text-amber-500' : 'bg-green-900/30 text-green-400'}`}>
-                      {post.category}
+                      {post.category === 'blog_amharic' ? 'Blog · አማርኛ' : post.category === 'blog' ? 'Blog · English' : post.category}
                     </span>
                     <span className="text-gray-200 truncate block font-medium">{post.title}</span>
                   </div>
