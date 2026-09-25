@@ -1,5 +1,6 @@
 import { Book, Mail, Heart, Star, Facebook, Linkedin, Phone, ShoppingCart, Lock, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { ChatBot } from './chatbot/ChatBot';
 import { Checkout } from './components/Checkout';
 import { ProductSelector } from './components/ProductSelector';
@@ -635,6 +636,7 @@ function App() {
         </div>
       </footer>
       </div>
+      <Analytics />
     </div>
   );
 }
