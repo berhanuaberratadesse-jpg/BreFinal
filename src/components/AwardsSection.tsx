@@ -45,6 +45,50 @@ export function AwardsSection() {
           </p>
         </div>
 
+        <article className="mb-16 overflow-hidden rounded-2xl border border-amber-400/30 bg-slate-950/60 shadow-xl">
+          <div className="grid items-center gap-8 p-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] md:p-10">
+            <div className="relative flex items-center justify-center gap-3 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 p-5">
+              <img
+                src="/Book-Mock-Up-01-1.png"
+                alt="True Light book by Berhanu Aberra Tadesse"
+                className="h-48 w-1/2 object-contain sm:h-64"
+                loading="lazy"
+              />
+              <img
+                src="/author-collab-feature.png"
+                alt="Featured in The Author Collab, Off the Page"
+                className="h-36 w-1/2 object-contain sm:h-52"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-amber-400">Featured interview</p>
+              <h3 className="mb-4 text-2xl font-bold text-white sm:text-3xl">
+                The story behind <em>True Light</em>
+              </h3>
+              <p className="mb-6 leading-relaxed text-gray-300">
+                From my years in aviation to my journey of faith and writing, this interview shares more of the person and purpose behind the book. I would love for you to read it and tell me what part of the story speaks to you.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://www.theauthorcollab.com/2026/09/27/off-the-page-meet-award-winning-author-berhanu-aberra-tadesse/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-11 items-center rounded-lg bg-amber-400 px-5 py-3 font-semibold text-slate-950 transition-colors hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-400"
+                >
+                  Read my interview <span className="sr-only">on The Author Collab (opens in a new tab)</span>
+                </a>
+                <a
+                  href="#book"
+                  className="inline-flex min-h-11 items-center rounded-lg border border-amber-400/70 px-5 py-3 font-semibold text-amber-300 transition-colors hover:bg-amber-400/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-400"
+                >
+                  Explore True Light
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
         {/* Desktop Grid View */}
         <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {awards.map((award, index) => (
