@@ -6,6 +6,7 @@ export function AwardsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const awards = [
+    { id: 7, image: '/awards/international-christian-book-awards-stage.jpg', title: 'International Christian Book Awards', description: 'Receiving the award for True Light on stage' },
     { id: 2, image: '/awards/A97757E5-5B21-4FFE-AEEC-C88812FE8A3A.jpg', title: 'Award Recognition', description: 'Featured honor from the current collection' },
     { id: 3, image: '/awards/D395EDA2-F7AD-4A7A-8710-8691BA288362.jpg', title: 'Award Recognition', description: 'Featured honor from the current collection' },
     { id: 4, image: '/awards/E02462F7-8948-42A4-A02B-5B136580ADCA.jpg', title: 'International Impact Book Award', description: 'Recognized for outstanding literary achievement' },
