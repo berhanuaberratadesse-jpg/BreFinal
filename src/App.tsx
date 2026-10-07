@@ -418,6 +418,33 @@ function App() {
           </div>
         </section>
 
+        <section id="gifts" aria-label="True Light gifts" className="py-12 bg-slate-900/70">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a
+              href="https://tedenkayalehu.printify.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-2xl overflow-hidden shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-400 hover:opacity-95 transition-opacity"
+              aria-label="Shop True Light Gifts on Printify (opens in a new tab)"
+            >
+              <img
+                src="/true-light-gifts-banner.webp"
+                alt="Carry the Light into Everyday Life. A daily reminder of faith, hope, and transformation. Shop True Light Gifts featuring the True Light mug."
+                width={1774}
+                height={887}
+                loading="lazy"
+                className="w-full h-auto"
+              />
+            </a>
+            <div className="mt-5 text-center">
+              <a href="https://tedenkayalehu.printify.me/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-lg bg-amber-400 px-6 py-3 font-semibold text-slate-900 hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-200">
+                Shop True Light Gifts
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
         <YouTubeSection />
 
         <AwardsSection />
