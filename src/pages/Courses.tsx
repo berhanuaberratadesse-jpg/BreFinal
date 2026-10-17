@@ -12,6 +12,7 @@ interface Post {
 export function Courses() {
   const [courses, setCourses] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
+  const [openPreviewId, setOpenPreviewId] = useState<string | null>(null);
   const [signedUp, setSignedUp] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isFormExpanded, setIsFormExpanded] = useState(false);
@@ -208,14 +209,39 @@ export function Courses() {
             {courses.map(course => (
               <div key={course.id} className="bg-slate-800/80 p-6 rounded-xl border border-slate-600 hover:border-amber-500/50 transition-colors shadow-lg">
                 <h3 className="text-xl font-bold mb-4 text-white">{course.title}</h3>
-                <a 
-                  href={course.link_url} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold rounded-lg transition-colors"
-                >
-                  Access Course
-                </a>
+                {course.link_url?.startsWith('/') && course.link_url.toLowerCase().split('?')[0].endsWith('.pdf') ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => setOpenPreviewId(openPreviewId === course.id ? null : course.id)}
+                      aria-expanded={openPreviewId === course.id}
+                      className="inline-flex items-center px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold rounded-lg transition-colors"
+                    >
+                      {openPreviewId === course.id ? 'Close Course' : 'Access Course'}
+                    </button>
+                    {openPreviewId === course.id && (
+                      <div className="mt-5">
+                        <iframe
+                          src={course.link_url}
+                          title={course.title}
+                          className="w-full h-[75vh] min-h-[500px] rounded-lg border border-slate-600 bg-white"
+                        />
+                        <a href={course.link_url} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-sm text-amber-300 underline">
+                          Open PDF in a new tab
+                        </a>
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <a
+                    href={course.link_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold rounded-lg transition-colors"
+                  >
+                    Access Course
+                  </a>
+                )}
               </div>
             ))}
           </div>
