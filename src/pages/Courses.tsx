@@ -13,6 +13,7 @@ export function Courses() {
   const [courses, setCourses] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
   const [openPreviewId, setOpenPreviewId] = useState<string | null>(null);
+  const freeLessonsPdf = '/Copy%20of%20Red%20And%20Pink%20Minimalist%20Floral%20Spiritual%20Workbook%20Digital%20Book%20Cover.pdf';
   const [signedUp, setSignedUp] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isFormExpanded, setIsFormExpanded] = useState(false);
@@ -209,7 +210,7 @@ export function Courses() {
             {courses.map(course => (
               <div key={course.id} className="bg-slate-800/80 p-6 rounded-xl border border-slate-600 hover:border-amber-500/50 transition-colors shadow-lg">
                 <h3 className="text-xl font-bold mb-4 text-white">{course.title}</h3>
-                {course.link_url?.startsWith('/') && course.link_url.toLowerCase().split('?')[0].endsWith('.pdf') ? (
+                {(course.title === 'True Light workbook' || (course.link_url?.startsWith('/') && course.link_url.toLowerCase().split('?')[0].endsWith('.pdf'))) ? (
                   <>
                     <button
                       type="button"
@@ -222,11 +223,11 @@ export function Courses() {
                     {openPreviewId === course.id && (
                       <div className="mt-5">
                         <iframe
-                          src={course.link_url}
+                          src={course.title === 'True Light workbook' ? freeLessonsPdf : course.link_url}
                           title={course.title}
                           className="w-full h-[75vh] min-h-[500px] rounded-lg border border-slate-600 bg-white"
                         />
-                        <a href={course.link_url} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-sm text-amber-300 underline">
+                        <a href={course.title === 'True Light workbook' ? freeLessonsPdf : course.link_url} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-sm text-amber-300 underline">
                           Open PDF in a new tab
                         </a>
                       </div>
