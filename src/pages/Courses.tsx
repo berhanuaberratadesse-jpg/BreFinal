@@ -183,6 +183,27 @@ export function Courses() {
           </div>
         </section>
 
+        <section aria-labelledby="academy-membership-title" className="mb-8 rounded-[2rem] border border-amber-400/40 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 p-6 shadow-lg sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-300">Flexible ways to learn</p>
+          <h2 id="academy-membership-title" className="mt-2 text-2xl font-bold text-white sm:text-3xl">Choose your True Light Academy access</h2>
+          <p className="mt-3 text-slate-300">Choose lifetime access to one course or a monthly membership for all courses included in the academy.</p>
+          <div className="mt-6 grid gap-5 md:grid-cols-2">
+            <div className="flex flex-col rounded-2xl border border-slate-600 bg-slate-950/60 p-6">
+              <h3 className="text-xl font-bold text-white">From Self to Christ — Full Course</h3>
+              <p className="mt-2 text-3xl font-bold text-amber-400">$39.99 <span className="text-sm font-normal text-slate-300">one time</span></p>
+              <p className="mt-3 flex-1 text-sm leading-6 text-slate-300">Purchase all 14 lessons with ongoing access to this course.</p>
+              <a href="https://berhanutadesse.com?msopen=/member/plans/laxglhiqpa" className="mt-5 inline-flex justify-center rounded-full bg-amber-500 px-5 py-3 font-bold text-slate-950 hover:bg-amber-400">Buy This Course</a>
+            </div>
+            <div className="flex flex-col rounded-2xl border border-amber-400/60 bg-amber-500/10 p-6">
+              <h3 className="text-xl font-bold text-white">True Light Academy Membership</h3>
+              <p className="mt-2 text-3xl font-bold text-amber-400">$9.99 <span className="text-sm font-normal text-slate-300">per month</span></p>
+              <p className="mt-3 flex-1 text-sm leading-6 text-slate-300">Access all courses included in your membership while subscribed. New courses will be available as they are added to the membership.</p>
+              <a href="https://berhanutadesse.com?msopen=/member/plans/wco6ennruw" className="mt-5 inline-flex justify-center rounded-full bg-amber-500 px-5 py-3 font-bold text-slate-950 hover:bg-amber-400">Join Academy — $9.99/month</a>
+              <p className="mt-3 text-xs text-slate-300">Automatically renews monthly. Cancel through your membership account.</p>
+            </div>
+          </div>
+        </section>
+
         {signedUp ? (
           <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/10 p-6 text-emerald-200">
             <h2 className="text-2xl font-bold mb-2">Thank you for signing up!</h2>
