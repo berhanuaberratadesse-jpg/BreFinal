@@ -332,6 +332,30 @@ function App() {
           </div>
         </section>
 
+        <section id="leadership" className="py-16 bg-slate-900/60" aria-labelledby="leadership-heading">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-10">
+              <p className="text-amber-400 font-semibold tracking-widest uppercase text-sm mb-3">Growth • Purpose • Leadership</p>
+              <h2 id="leadership-heading" className="text-3xl md:text-4xl font-bold text-white mb-5">My Maxwell Leadership Journey</h2>
+              <p className="text-gray-200 leading-relaxed">
+                In August 2026, I attended the International Maxwell Conference in Orlando, Florida,
+                celebrating 15 years of leadership legacy. As a Maxwell Leadership Certified Team member,
+                I am committed to helping others discover their purpose, grow in character, and lead with lasting impact.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <figure className="bg-slate-800 rounded-2xl overflow-hidden border border-amber-500/20 shadow-xl">
+                <img src="/IMG-20261022-WA0002.jpg" alt="Berhanu Aberra Tadesse at the August 2026 International Maxwell Conference in Orlando" loading="lazy" className="w-full aspect-[3/2] object-contain bg-slate-900" />
+                <figcaption className="text-gray-200 text-sm p-5">International Maxwell Conference • Orlando, Florida • August 2026</figcaption>
+              </figure>
+              <figure className="bg-slate-800 rounded-2xl overflow-hidden border border-amber-500/20 shadow-xl">
+                <img src="/IMG-20261022-WA0003.jpg" alt="Berhanu Aberra Tadesse with fellow leaders at the International Maxwell Conference" loading="lazy" className="w-full aspect-[3/2] object-contain bg-slate-900" />
+                <figcaption className="text-gray-200 text-sm p-5">Connecting with fellow leaders and celebrating a legacy of leadership.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
         <section id="book" className="py-20 bg-slate-800/40 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
