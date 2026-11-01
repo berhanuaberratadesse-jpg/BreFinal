@@ -300,6 +300,41 @@ function App() {
           </div>
         </section>
 
+        <section id="free-devotionals" className="py-20 bg-slate-900 text-white" aria-labelledby="free-devotionals-heading">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <p className="text-amber-400 uppercase tracking-widest text-sm font-semibold mb-3">A Gift for Your Journey</p>
+              <h2 id="free-devotionals-heading" className="text-4xl font-bold mb-5">Free 7-Day Devotionals</h2>
+              <p className="text-lg text-gray-300 leading-relaxed">Take a few quiet moments each day to discover hope in Christ and grow in faith. Choose the devotional that speaks to your journey, and receive it by email at no cost.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <article className="overflow-hidden rounded-2xl border border-amber-500/25 bg-slate-800 shadow-xl flex flex-col">
+                <div className="bg-gradient-to-br from-amber-700 via-orange-800 to-slate-900 px-8 py-14 text-center min-h-[220px] flex flex-col items-center justify-center">
+                  <Book className="text-amber-200 mb-4" size={36} aria-hidden="true" />
+                  <p className="text-xs uppercase tracking-[0.2em] text-amber-100 mb-3">7-Day Devotional</p>
+                  <h3 className="text-3xl font-bold text-white leading-tight">From Emptiness to Fulfillment</h3>
+                </div>
+                <div className="p-8 flex flex-col flex-1">
+                  <p className="text-gray-200 leading-relaxed mb-8 flex-1">Discover the love, peace, and purpose found in Jesus Christ. A gentle invitation for anyone searching for hope and a meaningful new beginning.</p>
+                  <a href="https://mailchi.mp/berhanutadesse/n2xbfunyn7" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-300">Get Your Free Devotional</a>
+                </div>
+              </article>
+              <article className="overflow-hidden rounded-2xl border border-amber-500/25 bg-slate-800 shadow-xl flex flex-col">
+                <div className="bg-gradient-to-br from-blue-800 via-indigo-900 to-slate-950 px-8 py-14 text-center min-h-[220px] flex flex-col items-center justify-center">
+                  <Book className="text-blue-200 mb-4" size={36} aria-hidden="true" />
+                  <p className="text-xs uppercase tracking-[0.2em] text-blue-100 mb-3">7-Day Devotional</p>
+                  <h3 className="text-3xl font-bold text-white leading-tight">From Darkness to Light</h3>
+                </div>
+                <div className="p-8 flex flex-col flex-1">
+                  <p className="text-gray-200 leading-relaxed mb-8 flex-1">Begin a journey of spiritual encouragement, renewed hope, and growing closer to Christ through seven days of thoughtful reflection.</p>
+                  <a href="https://mailchi.mp/berhanutadesse/t85o6s35h6" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-300">Get Your Free Devotional</a>
+                </div>
+              </article>
+            </div>
+            <p className="text-center text-sm text-gray-400 mt-8">Both devotionals are free. Sign up on the next page to receive your chosen devotional by email.</p>
+          </div>
+        </section>
+
         <section id="about" className="py-20 bg-slate-800/40 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
