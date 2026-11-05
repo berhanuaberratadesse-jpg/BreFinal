@@ -23,6 +23,22 @@ export function YouTubeSection() {
               <iframe
                 width="100%"
                 height="100%"
+                src="https://www.youtube.com/embed/hpVqWjK89U8"
+                title="Latest True Light video"
+                loading="lazy"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <h3 className="text-xl font-semibold text-white">Latest True Light Video</h3>
+            <a href="https://youtu.be/hpVqWjK89U8" target="_blank" rel="noopener noreferrer" className="inline-block text-amber-400 hover:text-amber-300 underline">Watch on YouTube</a>
+          </div>
+          <div className="space-y-4">
+            <div className="rounded-xl overflow-hidden shadow-2xl border border-amber-500/20 aspect-video bg-slate-900">
+              <iframe
+                width="100%"
+                height="100%"
                 src="https://www.youtube.com/embed/BdDKfmx-Vyk"
                 title="My Interview at the International Christian Book Awards — Fort Wayne, Indiana | September 2026"
                 loading="lazy"
